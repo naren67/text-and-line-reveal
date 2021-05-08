@@ -42,6 +42,7 @@
           <script>
                     const timeRev = gsap.timeline()
 
+                 function run(){
                     timeRev.from('.line span', 1, {
                               y: 200,
                               ease: "power4.out",
@@ -53,14 +54,17 @@
                     })
 
                     timeRev.from('.line__run', 1, {
-                              y: 200,
+                              x: 10000,
                               ease: "power4.out",
                               delay: 0,
-                              skewY: 10,
+                              // skewY: 10,
                               stagger: {
                                         amount: 0.4,
                               }
                     })
+                 }
+
+                 run()
           </script>
 </body>
 
